@@ -1,0 +1,26 @@
+[33mcommit 0b0ccfd3f1a4bd3f0a22548b0ddd2cf710ac97e0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mles3[m[33m)[m
+Author: My <graiwers@gmail.com>
+Date:   Thu Aug 7 12:45:19 2025 +0400
+
+    python
+
+[33mcommit 3d6e76e16f81fa4d717f0e8f33eb0cfb9737f348[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/lesson3[m[33m, [m[1;31morigin/les3[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mlesson3[m[33m)[m
+Merge: b5f3256 9562c72
+Author: PDV63-ponomarev <graiwers@gmail.com>
+Date:   Wed Aug 6 12:53:31 2025 +0400
+
+    Merge pull request #1 from PDV63-ponomarev/homework_Ponomarev
+    
+    home_work_3_done
+
+[33mcommit 9562c72b6b8a2c1c8ed1cb29a673010cc6714894[m
+Author: unknown <Dima@gmail.com>
+Date:   Wed Aug 6 12:42:19 2025 +0400
+
+    home_work_3_done
+
+[33mcommit b5f3256bc34d937e0e0407ce557c5a980124e7ab[m
+Author: PDV63-ponomarev <graiwers@gmail.com>
+Date:   Tue Aug 5 15:42:45 2025 +0400
+
+    Initial commit
