@@ -277,9 +277,9 @@
 #######
 
 
-country = ['USA', 'China', 'France']
-temps = [23, 33, 12]
+# country = ['USA', 'China', 'France']
+# temps = [23, 33, 12]
 
-countr_dict = dict(zip(country, temps))
-print(countr_dict)
+# countr_dict = dict(zip(country, temps))
+# print(countr_dict)
 
