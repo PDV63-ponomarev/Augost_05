@@ -1,0 +1,5 @@
+cursor.execute('SELECT * FROM students WHERE id = 2')
+data2 = cursor.fetchone()
+cursor.execute('SELECT * FROM students WHERE id = 3')
+data3 = cursor.fetchone()
+print(data2, data3)
