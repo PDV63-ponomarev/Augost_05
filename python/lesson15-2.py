@@ -1,25 +1,25 @@
-# import mysql.connector as mysql
+import mysql.connector as mysql
 
-# db = mysql.connect(
-#     user = 'st-onl',
-#     passwd = 'AVNS_tegPDkI5BlB2lW5eASC',
-#     host = 'db-mysql-fra1-09136-do-user-7651996-0.b.db.ondigitalocean.com',
-#     port = 25060,
-#     database = 'st-onl'
-# )
+db = mysql.connect(
+    user = 'st-onl',
+    passwd = 'AVNS_tegPDkI5BlB2lW5eASC',
+    host = 'db-mysql-fra1-09136-do-user-7651996-0.b.db.ondigitalocean.com',
+    port = 25060,
+    database = 'st-onl'
+)
 
-# cursor = db.cursor(dictionary=True)
+cursor = db.cursor(dictionary=True)
 
 # cursor.execute('SELECT * FROM students')
 # data = cursor.fetchall()
 # for student in data:
 #     print(student['name'])
 
-# cursor.execute('SELECT * FROM students WHERE id = 2')
-# data2 = cursor.fetchone()
-# cursor.execute('SELECT * FROM students WHERE id = 3')
-# data3 = cursor.fetchone()
-# print(data2, data3)
+cursor.execute('SELECT * FROM students WHERE id = 2')
+data2 = cursor.fetchone()
+cursor.execute('SELECT * FROM students WHERE id = 3')
+data3 = cursor.fetchone()
+print(data2, data3)
 
 
 #уязвимый для взлома sql иньекцией
@@ -66,5 +66,4 @@
 # '''
 
 
-# db.close()
-
+db.close()
