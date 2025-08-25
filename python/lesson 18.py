@@ -15,7 +15,7 @@ import requests
 
 
 # def one_post():
-#     post_id = 42
+#     post_id = new_post()
 #     response = requests.get(f'https://jsonplaceholder.typicode.com/posts/{post_id}').json()
 #     assert response['id'] == post_id
 # # проверка равен ли id ссылке
@@ -26,25 +26,48 @@ import requests
 ####################################
 
 
-def post_a_post():
-    body = {
-        'title': 'foo',
-        'body': 'bar',
-        'userId': 1
-    }
+# def post_a_post():
+#     body = {
+#         'title': 'foo',
+#         'body': 'bar',
+#         'userId': 1
+#     }
     
-    headers = {'Content-type': 'application/json'}
+#     headers = {'Content-type': 'application/json'}
 
-    response = requests.post(
-        'https://jsonplaceholder.typicode.com/posts',
-        json = body,
-        headers = headers
-    )
+#     response = requests.post(
+#         'https://jsonplaceholder.typicode.com/posts',
+#         json = body,
+#         headers = headers
+#     )
 
-    assert response.status_code == 201, 'Status code is incorrect'
-    assert response.json()['id'] == 101, 'ID is incorrect'
+#     assert response.status_code == 201, 'Status code is incorrect'
+#     assert response.json()['id'] == 101, 'ID is incorrect'
 
-post_a_post()
+# post_a_post()
+
+
+################
+
+
+# def new_post():
+#     body = {
+#         'title': 'foo',
+#         'body': 'bar',
+#         'userId': 1
+#     }
+    
+#     headers = {'Content-type': 'application/json'}
+
+#     response = requests.post(
+#         'https://jsonplaceholder.typicode.com/posts',
+#         json = body,
+#         headers = headers
+#     )
+
+#     return response.json()['id']
+
+# new_post()
 
 
 ################
@@ -100,3 +123,9 @@ post_a_post()
 #     print(response.status_code)
 
 # delete_a_post()
+
+
+################
+
+def clear(post_id):
+    requests.delete(f'https://jsonplaceholder.typicode.com/posts/{post_id}')

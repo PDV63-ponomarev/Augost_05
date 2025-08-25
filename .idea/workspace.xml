@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559bb739-9752-48f1-99be-09be00a1c28e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/less16/creds.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/less16/creds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/less16/secr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/lesson15-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/lesson15-2.py" afterDir="false" />
-    </list>
+    <list default="true" id="559bb739-9752-48f1-99be-09be00a1c28e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,12 +29,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.pytest in test_unittest_example.py.executor": "Run",
     "Python.lesson15-2.executor": "Run",
     "Python.secrets.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "les16-2",
+    "git-widget-placeholder": "es19",
     "last_opened_file_path": "C:/project/Augost_05"
   }
 }]]></component>
