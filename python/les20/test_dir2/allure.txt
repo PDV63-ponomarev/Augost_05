@@ -1,0 +1,40 @@
+# pip install pytest-xdist  
+# установка pyworkera позволяюшего запустить много тестов паралельно
+# pytest -v -n auto запуск с pyworkeroм, сколько ядер столько и паралельных тестов
+
+
+# плагин allure нужен для визуализации результатов тестов
+# pip install allure-pytest
+# pytest -v --alluredir=allur-results запуск плагина. положит в паплку allur-results
+# для чтения отчета нужен Java (11 или 17) и allure
+ 
+
+
+#  установка allure:
+
+# в терминале для установки scoop (нужное для allure)
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# установка allure
+# scoop install allure
+
+# проверка (нужна java)
+# allure --version
+
+# java 
+# https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17
+
+
+
+# первый запуск alluredir с генерацией папки
+# pytest -v --alluredir=allure-result
+
+# запуск allure ложит папку allure-result. терминал
+# allure serve allure-result
+
+# генерация тестов без открытия, ложит в папку по умолчанию
+# allure generate 
+
+# генерация отчета, для истории нужно копировать history
+# allure generate -c allure-result/ -o allure-report
