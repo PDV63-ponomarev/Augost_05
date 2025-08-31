@@ -1,0 +1,26 @@
+selenium WebDriver - блиблиотека позволяющая взамодействовать с браузером через код
+
+selenium IDE - запись последовательных действий в браузере и их повтор
+
+selenium GRID - запуск одновременно нескольких вариантов тестов на разных ОС и браузерах
+
+pip install selenium
+
+WebDriver:
+from selenium import webdriver 
+
+chrome_driver = webdriver.Chrome()
+ie_driver = webdriver.ie()
+firefox_driver = webdriver.Firefox()
+
+
+driver.get('url') - открыть страницу
+driver.close() - закрыть вкладку браузера
+driver.quit() - закрыть браузер
+
+
+действия:
+driver.title - получить title страницы (название вкладки)
+driver.page_source - получить код страницы
+driver.current_url - получить url
+
