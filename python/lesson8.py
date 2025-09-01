@@ -92,8 +92,8 @@
 
 
 
-# from moduler.helper import assist  # импорт конкретной функции 
+from moduler.helper import assist  # импорт конкретной функции 
 
-# assist()
+assist()
 
 
