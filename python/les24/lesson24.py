@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -36,16 +38,17 @@ def driver():
 
 # поиск элемента на встроенной странице iframe
 
-def test_iframe(driver):
+# def test_iframe(driver):
     
-    driver.get('https://www.qa-practice.com/elements/iframe/iframe_page')
-    iframe = driver.find_element(By.TAG_NAME,'iframe')
-    driver.switch_to.frame(iframe)
-    burger_menu = driver.find_element(By.CLASS_NAME,'navbar-toggler-icon')
-    burger_menu.click()
-    sleep(2)
-    driver.switch_to.default_content() #выйтий из iframe
-    driver.find_element(By.LINK_TEXT, 'Iframe')
+#     driver.get('https://www.qa-practice.com/elements/iframe/iframe_page')
+#     iframe = driver.find_element(By.TAG_NAME,'iframe')
+#     driver.switch_to.frame(iframe)
+#     burger_menu = driver.find_element(By.CLASS_NAME,'navbar-toggler-icon')
+#     burger_menu.click()
+#     sleep(2)
+#     driver.switch_to.default_content() #выйтий из iframe
+#     driver.find_element(By.LINK_TEXT, 'Iframe')
+
 
 
 ###############################
@@ -66,3 +69,70 @@ def test_iframe(driver):
 #     checkbox.click()
 #     submit = driver.find_element(By.ID,'submit-id-submit')
 #     submit.click()
+
+
+
+###############################
+
+
+# наведение мыши
+
+# def test_drop_menu(driver):
+#     driver.get('https://www.avito.ru/')
+#     bussnes = driver.find_element(By.CSS_SELECTOR, '[class = "n5Jay EXWlj"]')
+#     buy = driver.find_element(By.CSS_SELECTOR, '[data-catalog-slug="for_business_seller_hub"]')
+    
+#     # ActionChains(driver).move_to_element(bussnes).click(buy).perform()
+#     action = ActionChains(driver)
+#     action.move_to_element(bussnes)
+#     action.click(buy)
+#     action.perform()
+
+#     assert driver.find_element(By.CSS_SELECTOR, '[class="a6mlR ttiXf"]').text == 'Заказать звонок'
+
+#     # action.double_click(buy) #двойной клик
+#     # action.context_click(buy) # ЛКМ
+
+
+
+###############################
+
+
+# перетягивание обьекта
+
+# def test_d_n_d(driver):
+#     driver.get('https://www.qa-practice.com/elements/dragndrop/boxes')
+#     first = driver.find_element(By.ID, 'rect-draggable')
+#     second = driver.find_element(By.ID, 'rect-droppable')
+
+#     # ActionChains(driver).drag_and_drop(first, second).perform() #первый перетянуть во второй
+    
+#     # ручное перетягивание
+#     actions = ActionChains(driver)
+#     actions.click_and_hold(first) #нажать и зажать
+#     actions.move_to_element(second)
+#     actions.release()
+#     actions.perform()
+
+
+###############################
+
+
+# зажатие кнопки
+
+# def test_open_in_new_tab(driver):
+#     driver.get('https://www.qa-practice.com/')
+#     link = driver.find_element(By.LINK_TEXT, 'Homepage')
+#     ActionChains(driver).key_down(Keys.CONTROL).click(link).key_up(Keys.CONTROL).perform()
+
+
+###############################
+
+# работа во всплыв окошеке браузера
+
+def test_alets(driver):
+    driver.get('https://www.qa-practice.com/elements/alert/alert')
+    driver.find_element(By.CLASS_NAME, 'a-button').click()
+    alert = Alert(driver)
+    alert.accept()
+    
